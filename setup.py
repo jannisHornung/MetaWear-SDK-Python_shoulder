@@ -36,7 +36,7 @@ class MetaWearBuild(build_py):
                 move(os.path.join(src, f), dest)
 
     def run(self):        
-        cpp_sdk = os.path.join(root, 'MetaWear-SDK-Cpp')
+        cpp_sdk = os.path.join(root, 'MetaWear-SDK-Cpp_shoulder')
         system = platform.system()
         dist_dir = os.path.join(cpp_sdk, 'dist', 'release', 'lib', "Win32" if machine == "x86" and system == "Windows" else machine)
 
@@ -52,7 +52,7 @@ class MetaWearBuild(build_py):
 
             copy2(os.path.join(dist_dir, "MetaWear.Win32.dll"), dest)
         elif (system == 'Linux'):
-            status = call(["make", "-C", "MetaWear-SDK-Cpp", "OPT_FLAGS=-Wno-strict-aliasing", "-j%d" % (cpu_count())], cwd=root, stderr=STDOUT)
+            status = call(["make", "-C", "MetaWear-SDK-Cpp_shoulder", "OPT_FLAGS=-Wno-strict-aliasing", "-j%d" % (cpu_count())], cwd=root, stderr=STDOUT)
             if (status != 0):
                 raise RuntimeError("Failed to compile C++ SDK")
 

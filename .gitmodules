@@ -1,3 +1,3 @@
-[submodule "MetaWear-SDK-Cpp"]
-	path = MetaWear-SDK-Cpp
-	url = https://github.com/mbientlab/MetaWear-SDK-Cpp.git
+[submodule "MetaWear-SDK-Cpp_shoulder"]
+	path = MetaWear-SDK-Cpp_shoulder
+	url = https://github.com/jannisHornung/MetaWear-SDK-Cpp_shoulder.git
