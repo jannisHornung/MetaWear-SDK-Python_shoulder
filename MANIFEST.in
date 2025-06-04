@@ -1,16 +1,16 @@
 include LICENSE.txt
 include README.rst
 
-graft MetaWear-SDK-Cpp
-prune MetaWear-SDK-Cpp/bindings/swift
-prune MetaWear-SDK-Cpp/cppdocs
-prune MetaWear-SDK-Cpp/build
-prune MetaWear-SDK-Cpp/Debug
-prune MetaWear-SDK-Cpp/Release
-prune MetaWear-SDK-Cpp/x64
-prune MetaWear-SDK-Cpp/c-binding-generator
-prune MetaWear-SDK-Cpp/test
-prune MetaWear-SDK-Cpp/.git
+graft MetaWear-SDK-Cpp_shoulder
+prune MetaWear-SDK-Cpp_shoulder/bindings/swift
+prune MetaWear-SDK-Cpp_shoulder/cppdocs
+prune MetaWear-SDK-Cpp_shoulder/build
+prune MetaWear-SDK-Cpp_shoulder/Debug
+prune MetaWear-SDK-Cpp_shoulder/Release
+prune MetaWear-SDK-Cpp_shoulder/x64
+prune MetaWear-SDK-Cpp_shoulder/c-binding-generator
+prune MetaWear-SDK-Cpp_shoulder/test
+prune MetaWear-SDK-Cpp_shoulder/.git
 
 graft mbientlab
 recursive-exclude mbientlab/metawear cbindings.py
