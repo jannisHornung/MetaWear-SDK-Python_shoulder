@@ -72,7 +72,7 @@ setup(
     long_description=open(os.path.join(os.path.dirname(__file__), "README.rst")).read(),
     package_data={'mbientlab.metawear': so_pkg_data},
     include_package_data=True,
-    url='https://github.com/mbientlab/MetaWear-SDK-Python',
+    url='https://github.com/jannisHornung/MetaWear-SDK-Python_shoulder.git',
     author='MbientLab',
     author_email="hello@mbientlab.com",
     install_requires=[
